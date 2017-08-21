@@ -1,0 +1,4 @@
+---
+  dependencies:
+    - { role: curl, become: yes }
+    - { role: java, become: yes }

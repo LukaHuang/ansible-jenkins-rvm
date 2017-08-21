@@ -12,5 +12,4 @@
         msg: "{{ message }}"
 
   roles:
-    - { role: curl, become: yes }
     - { role: jenkins, become: yes }
