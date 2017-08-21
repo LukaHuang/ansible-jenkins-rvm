@@ -10,3 +10,6 @@
     - name: print debug message
       debug:
         msg: "{{ message }}"
+
+  roles:
+    - {role: curl, become: yes}
