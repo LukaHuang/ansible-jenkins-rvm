@@ -1,0 +1,60 @@
+---
+  - name: install libmysqlclient-dev
+    apt:
+      name: libmysqlclient-dev
+    when:  ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'
+
+  - name: install libxslt-dev
+    apt:
+      name: libxslt-dev
+    when:  ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'
+
+  - name: install libxml2-dev
+    apt:
+      name: libxml2-dev
+    when:  ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'
+
+  - name: install libgmp3-dev
+    apt:
+      name: libgmp3-dev
+    when:  ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'
+
+  - name: install ruby-dev
+    apt:
+      name: ruby-dev
+    when:  ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'
+
+  - name: install ilibffi-dev
+    apt:
+      name: libffi-dev
+    when:  ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'
+
+  - name: install libpq-dev
+    apt:
+      name: libpq-dev
+    when:  ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'
+
+  - name: install libev-dev
+    apt:
+      name: libev-dev
+    when:  ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'
+
+  - name: install openssl
+    apt:
+      name: openssl
+    when:  ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'
+
+  - name: install make
+    apt:
+      name: make
+    when:  ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'
+
+  - name: install libgmp-dev
+    apt:
+      name: libgmp-dev
+    when:  ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'
+
+  - name: install build-essential
+    apt:
+      name: build-essential
+    when:  ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'
