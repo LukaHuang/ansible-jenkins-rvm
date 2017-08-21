@@ -12,3 +12,6 @@
   apt:
     name: jenkins
     update_cache: yes
+
+- name: install plugins
+  include: install_plugins.yml
