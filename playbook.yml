@@ -1,4 +1,34 @@
 ---
 - hosts: ironman
   roles:
-    - { role: jenkins, become: yes }
+    - {
+      role: jenkins,
+      become: yes
+    }
+    - {
+      role: rvm_io.ruby,
+      tags: ruby,
+      rvm1_rubies: ['ruby-2.1.10'],
+      rvm1_user: 'jenkins',
+      become: yes
+    }
+    - {
+      role: rails_necessary,
+      become: yes
+    }
+    - {
+      role: nodejs,
+      become: yes
+    }
+    - {
+      role: Stouts.postfix,
+      become: yes
+    }
+
+- hosts: db-servers
+  become: yes
+  vars_files:
+    - vars/main.yml
+  roles:
+    - { role: geerlingguy.mysql }
+
