@@ -1,0 +1,9 @@
+---
+  - name: install nodejs
+    apt:
+      name: nodejs
+    when:  ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'
+  - name: install npm
+    apt:
+      name: npm
+    when:  ansible_distribution == 'Ubuntu' or ansible_distribution == 'Debian'
