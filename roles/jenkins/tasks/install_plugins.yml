@@ -13,6 +13,10 @@
       owner: jenkins
       group: jenkins
     with_items:
+      - groovy
+      - startup-trigger-plugin
+      - javadoc
+      - maven-plugin
       - ace-editor
       - antisamy-markup-formatter
       - ant
@@ -26,6 +30,8 @@
       - durable-task
       - email-ext
       - external-monitor-job
+      - jackson2-api
+      - pipeline-model-definition
       - git-client
       - github-api
       - github-branch-source
@@ -52,6 +58,7 @@
       - pipeline-rest-api
       - pipeline-stage-step
       - pipeline-stage-view
+      - pipeline-github-lib
       - plain-credentials
       - resource-disposer
       - scm-api
@@ -59,7 +66,6 @@
       - ssh-credentials
       - ssh-slaves
       - structs
-      - subversion
       - timestamper
       - token-macro
       - windows-slaves
@@ -75,8 +81,18 @@
       - workflow-step-api
       - workflow-support
       - ws-cleanup
+      - ruby-runtime
       - rvm
       - docker-plugin
+      - docker-commons
+      - doclinks
+      - docker-workflow
+      - pipeline-model-api
+      - pipeline-model-definition
+      - pipeline-model-extensions
+      - pipeline-stage-tags-metadata
+      - pipeline-model-declarative-agent
+      - authentication-tokens
 
   - name: restart jenkins
     service:
