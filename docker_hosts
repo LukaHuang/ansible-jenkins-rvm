@@ -1,0 +1,7 @@
+server1  ansible_ssh_host=127.0.0.1  ansible_ssh_port=32768 ansible_ssh_pass=docker
+
+[ironman]
+server1
+
+[db-servers]
+server1
