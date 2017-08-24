@@ -1,0 +1,9 @@
+mysql_root_password: 123123123
+mysql_databases:
+  - name: for_test
+    encoding: utf8
+mysql_users:
+  - name: for_test
+    host: "%"
+    password: for_test
+    priv: "for_test.*:ALL"
